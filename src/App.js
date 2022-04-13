@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css"
+import GridRow from "./Compontent/GrideRow";
+class App extends React.Component{
+  constructor(){
+    super();
+    this.state={
+      bordState:[
+      ["","",""],
+      ["","",""],
+      ["","",""],],
+      turn:"x"
+    }
+  }
+  updateBoard=(row,col)=>{
+   const arr=this.state.bordState;
+   arr[row][col]=this.state.turn;
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      this.setState({
+        turn:this.state.turn==="x"?"0":"x",
+        bordState:arr
+      })
+  }
+  render(){
+    return(
+      <>
+      <h1 style={{"color":"blue","textAlign":"center"}}>Tic Tac Toe</h1>
+      <div className="container">
+          {[0,1,2].map((count)=>{
+            return <GridRow index={count} 
+            bordState={this.state.bordState} 
+            updateBoard={this.updateBoard}/>
+          })}
+      </div>
+      </>
+      
+    
+    
+    )
+  }
 }
-
 export default App;
