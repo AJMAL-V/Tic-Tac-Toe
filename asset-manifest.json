@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AJMAL-V/Tic-Tac-Toe.git/static/css/main.ee2ee815.css",
+    "main.js": "/AJMAL-V/Tic-Tac-Toe.git/static/js/main.2263ff12.js",
+    "static/js/787.d3befce1.chunk.js": "/AJMAL-V/Tic-Tac-Toe.git/static/js/787.d3befce1.chunk.js",
+    "index.html": "/AJMAL-V/Tic-Tac-Toe.git/index.html",
+    "main.ee2ee815.css.map": "/AJMAL-V/Tic-Tac-Toe.git/static/css/main.ee2ee815.css.map",
+    "main.2263ff12.js.map": "/AJMAL-V/Tic-Tac-Toe.git/static/js/main.2263ff12.js.map",
+    "787.d3befce1.chunk.js.map": "/AJMAL-V/Tic-Tac-Toe.git/static/js/787.d3befce1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee2ee815.css",
+    "static/js/main.2263ff12.js"
+  ]
+}
